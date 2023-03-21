@@ -1,4 +1,8 @@
-on: push
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
 
 jobs:
   publish:
@@ -9,7 +13,6 @@ jobs:
         with:
           node-version: 12
       - run: npm install
-      # - run: npm test
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
