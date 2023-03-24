@@ -1,6 +1,6 @@
 {
     "name": "@megamatt/prettier-config",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "author": "Matt Miller",
     "description": "Shared Prettier config",
@@ -10,8 +10,5 @@
     },
     "scripts": {
         "publish-manual": "npm publish"
-    },
-    "peerDependencies": {
-        "prettier": "2.8.5"
     }
 }
